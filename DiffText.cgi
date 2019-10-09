@@ -74,6 +74,13 @@ sub writeTempFiles($$)
 } # end of writeTempFiles()
 
 
+#==============================================================================
+#    G E T  F I L E  D I F F
+#
+#    Arg1: The source file.
+#    Arg2: The dest file.
+#    Returns: An array of lines that result from diffing the two files.
+#==============================================================================
 sub getFileDiff($$)
 {
   my $file1 = shift or 
@@ -144,7 +151,6 @@ sub processFileDiff($$)
     die "Must supply num_source_words to processFileDiff()!\n";
 
   my $source = 1;
-  my $changes = 0;
   my $s_add = 0;
   my $s_subt = 0;
   my $d_add = 0;
