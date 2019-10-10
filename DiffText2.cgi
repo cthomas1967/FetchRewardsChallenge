@@ -264,9 +264,13 @@ sub processData($$$)
   #===== Process the file diff
   my $diff_output = join("", @lines);
   my $coeff = processFileDiff(\@lines, $num_source_words);
+
+  #===== Print results
+  print "Source file has $num_source_words words.<br>\n";
   print "Match coefficient: $coeff<br>\n";
 
   #===== Debug
+  $diff_output = 'none' unless $diff_output;
   print "Diff output:<br>\n";
   print "<pre>\n";
   print $diff_output;

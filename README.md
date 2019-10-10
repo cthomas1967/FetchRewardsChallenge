@@ -1,3 +1,15 @@
+Usage:
+From the main page the user can either select a pre-configured test (see below) or paste in two text fragments for comparison.
+
+There were three text fragments provided in the test.  The pre-configured tests are as follows:
+
+1) Fragment 1 and Fragment 1.  They are identical.  Should give a coefficient of 1.
+2) Fragment 1 and Fragment 2.  These are the more similar texts.
+3) Fragment 1 and Fragment 3.  These are the less similar texts.
+4) Fragment 1 and Fragment 4.  These are completely dissimilar texts.  Should give a coefficient of 0.
+
+Notes:
+
 Once we have converted a document into a single column of words and diffed the two documents, there are five cases to consider.
 
 To illustrate these, it's useful to consider a source document of just one word in length.
